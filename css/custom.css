@@ -35,17 +35,22 @@
   --pst-font-family-monospace-system: "Akkurat Mono Regular Web", sans-serif;
 }
 
-body ul {
+html[data-theme="light"] {
+  --pst-color-primary: rgb(19, 6, 84);
+}
+
+
+article ul {
   list-style: none;
   display: table;
   padding-left: 0px;
 }
 
-body ul li {
+article ul li {
   display: table-row;
 }
 
-body ul li:before {
+article ul li:before {
   font-size: 0.8em;
   content: '\00F8FF';
   display: table-cell;
