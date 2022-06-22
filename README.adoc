@@ -1,0 +1,23 @@
+# zhinst-sphinx-theme
+
+The zhinst sphinx theme is based on the [pydata-sphinx-theme](https://github.com/pydata/pydata-sphinx-theme). This project contains only the customizations for it and no independent sphinx theme.
+
+    Please not that this customizations might change with newer versions of the pydata-sphinx-theme. So be sure to match the versions properly.
+
+## Usage
+
+1. [Setup/Install](https://pydata-sphinx-theme.readthedocs.io/en/latest/user_guide/install.html) the [pydata-sphinx-theme](https://github.com/pydata/pydata-sphinx-theme) in your project.
+
+2. Include this project as a submodule in `_static` file location)
+    ```
+    git submodule add https://github.com/zhinst/zhinst-sphinx-theme
+    ```
+3. Add the `css/custom.css` file to the sphinx configuration file
+   ```
+   html_static_path = ["_static"]
+   html_css_files = ['zhinst-sphinx-theme/css/custom.css']
+   ```
+
+# Demo
+
+[zhinst-toolkit](https://github.com/zhinst/zhinst-toolkit/docs)
